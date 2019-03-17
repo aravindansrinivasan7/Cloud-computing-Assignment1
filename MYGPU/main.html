@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>User login/logout</title>
+</head>
+<body>
+  {% if user %}
+  <div id = "menu" align = "middle" >
+         <a href = "/query">QUERY</a> |
+         <a href = "/compare">COMPARE</a> |
+         <a href = "{{ url }}">LOGOUT</a>
+      </div>
+<u><h1><center>GRAPHICAL PROCESSING UNIT</center></h1></u>
+<u><b>CREATE GPU </b></u><br/><br/>
+<form method="post" action="/">
+<pre>
+Name:        <input type="text" name="users_name" value="{{ myuser.name }}"/>
+Manufacturer:<input type="text" name="users_manufacturer" value="{{ myuser.manufacturer }}">
+Date:        <input type="text" name="users_date" value="{{ myuser.date }}"/>
+</pre>
+<input type="submit" value="Create" name="button"/>
+</form>
+<b>GPU:<br/></b>
+{% for item in result %}
+<a href='/view/{{ item.name }}'> {{ item.name }} </a><br/>
+{% endfor %}
+  {% else %}
+<center><h1><b>GRAPHICAL PROCESSING UNIT AND IT'S SERIES OF FEATURES</b></h1></center>
+<h2><center>PLEASE LOGIN</center></h2><br/>
+{% endif %}
+<h2><a href='{{ url }}'> {{ url_string }} </a></h2>
+
+<hr/>
+  <br/>
+  </body>
+</html>

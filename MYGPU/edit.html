@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Update User information</title>
+</head>
+<body>
+Edit your GPU information below<br/>
+<form method="post" action="/edit">
+Name:<input type="text" name="users_name" value="{{ myuser.name }}"/>
+<br/>
+Manufacturer:<input type="text" name="users_manufacturer" value="{{ myuser.manufacturer }}"
+<br/>
+<br/>
+Date:<input type="text" name="users_date" value="{{ myuser.date }}"/>
+<br/>
+<br/><input type="submit" value="Update" name="button"/>
+</form>
+<form method="post" action="/edit">
+<input type="submit" value="Cancel" name="button"/>
+</form>
+<br/>
+</body>
+</html>

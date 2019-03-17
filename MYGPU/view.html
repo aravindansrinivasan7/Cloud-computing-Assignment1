@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>GPU</title>
+</head>
+<body>
+  <u><h1><center><b>GPU INFORMATION: "{{ myuser.name }}"</br></b></center></h1></u>
+  <br/>
+<pre>
+<b>Name:                          </b> {{ myuser.name }}<br/>
+<b>Manufacturer:                  </b> {{ myuser.manufacturer }}<br/>
+<b>Date:                          </b> {{ myuser.date }}<br/>
+<b>GeometryShader:                </b> {{ myuser.geometryShader }}<br/>
+<b>TesselationShader:             </b> {{ myuser.tesselationShader }}<br/>
+<b>ShaderInt16:                   </b> {{ myuser.shaderInt16 }}<br/>
+<b>SparseBinding:                 </b> {{ myuser.sparseBinding }}<br/>
+<b>TextureCompressionETC2:        </b> {{ myuser.textureCompressionETC2 }}<br/>
+<b>VertexPipelineStoresAndAtomics:</b> {{ myuser.vertexPipelineStoresAndAtomics }}<br/><pre/>
+<br/>
+<br/>
+<b>Update GPU:</b><a href='/update/{{ myuser.name }}'>(press here)</a><br/>
+<h2><center><a href='/'> Homescreen </a><br/></center></h2>
+<br/>
+<hr/>
+</body>
+</html>

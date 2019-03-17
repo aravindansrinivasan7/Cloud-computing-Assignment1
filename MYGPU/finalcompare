@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<tr><th><b>GPU:</b></th><th>%s</th><th>%s</th></tr>%(i.name,j.name))
+        <tr><td><b>KeyName:</b></td><td>%s</td><td>%s</td></tr>%(i.name,j.name))
+        <tr><td><b>Manufacture:</b></td><td>%s</td><td>%s</td></tr>%(i.manufacturer,j.manufacturer))
+        <tr><td><b>Date:</b></td><td>%s</td><td>%s</td></tr>%(i.date,j.date))
+        <tr><td><b>geometryShader:</b></td><td>%s</td><td>%s</td></tr>%(i.geometryShader,j.geometryShader))
+        <tr><td><b>shaderInt16:</b></td><td>%s</td><td>%s</td></tr>%(i.shaderInt16,j.shaderInt16))
+        <tr><td><b>tesselationShader:</b></td><td>%s</td><td>%s</td></tr>%(i.tesselationShader,j.tesselationShader))
+        <tr><td><b>sparseBinding:</b></td><td>%s</td><td>%s</td></tr>%(i.sparseBinding,j.sparseBinding))
+        <tr><td><b>vertexPipelineStoresAndAtomics:</b></td><td>%s</td><td>%s</td></tr>%(i.vertexPipelineStoresAndAtomics,j.vertexPipelineStoresAndAtomics))
+        <tr><td><b>textureCompressionETC2:</b></td><td>%s</td><td>%s</td></tr>%(i.textureCompressionETC2,j.textureCompressionETC2))
+</html></body>

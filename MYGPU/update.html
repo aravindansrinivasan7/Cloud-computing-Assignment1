@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Update User information</title>
+</head>
+<body>
+<u><h1><center>EDIT GPU INFORMATION:"{{ myuser.name }}"</center></h1></u>
+<br/>
+
+<form method="post" action="/update/{{ my }}">
+<pre>
+Manufacturer:                  <input type="text" name="users_manufacturer" value="{{ myuser.manufacturer }}"/>
+Date:                          <input type="text" name="users_date" value="{{ myuser.date }}"/>
+geometryShader:                   {{myuser.geometryShader}} <input type="checkbox" name="users_geometryShader" value="{{ myuser.geometryShader }}"/>
+tesselationShader:                {{myuser.tesselationShader}} <input type="checkbox" name="users_tesselationShader" value="{{ myuser.tesselationShader }}"/>
+shaderInt16:                      {{myuser.shaderInt16}} <input type="checkbox" name="users_shaderInt16" value="{{ myuser.shaderInt16 }}"/>
+sparseBinding:                    {{myuser.sparseBinding}} <input type="checkbox" name="users_sparseBinding" value="{{ myuser.sparseBinding }}"/>
+textureCompressionETC2:           {{myuser.textureCompressionETC2}} <input type="checkbox" name="users_textureCompressionETC2" value="{{ myuser.textureCompressionETC2 }}"/>
+vertexPipelineStoresAndAtomics:   {{myuser.vertexPipelineStoresAndAtomics}} <input type="checkbox" name="users_vertexPipelineStoresAndAtomics" value="{{ myuser.vertexPipelineStoresAndAtomics }}"/>
+<br/>
+<input type="submit" value="Update" name="button"/></form>
+<h2><center><a href='/'> Homescreen </a><br/></center></h2>
+<hr/>
+</pre>
+<br/>
+</body>
+</html>
